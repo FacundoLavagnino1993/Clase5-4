@@ -15,7 +15,7 @@ namespace Clase5_4
         public int numero;
         public float importe;
 
-
+        
         public Factura()
         {
             this.fecha = DateTime.Now;//Se obtiene la fecha actual.
@@ -59,6 +59,17 @@ namespace Clase5_4
             : this(importe, fecha)
         { }
 
+        public static float operator +(Factura FacturaUno, Factura FacturaDos)
+        {
+            float resultado;
+            return resultado = FacturaUno.importe + FacturaDos.importe;
+
+        }
+
+        public static bool operator ==(Factura FacturaUno, Factura FacturaDos)
+        {
+            bool resultado = FacturaUno.importe == FacturaDos.importe;        
+        }
 
     }
 }

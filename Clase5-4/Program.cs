@@ -17,11 +17,23 @@ namespace Clase5_4
     {
         static void Main(string[] args)
         {
-            float Resultado;
-   
+            float resultado;
+            bool resul;
+               
             Console.WriteLine();//Recibe distintos parametros y todo lo transforma en string.
             Factura FacturaUno = new Factura(20, 5f);
             Factura FacturaDos = new Factura(5f, 20);
+
+            resultado = FacturaUno.importe + FacturaDos.importe;
+            if (FacturaUno == FacturaDos)
+            {
+                Console.WriteLine("Es el mismo importe");
+            }
+            
+
+
+
+
 
             /*  ESTAS LINEAS DE CODIGO NO FUNCIONAN!!!
              * 
@@ -34,6 +46,8 @@ namespace Clase5_4
              *   ESTAS LINEAS DE CODIGO NO FUNCIONAN!!!
              */
 
+
+            /*
             Dato a = new Dato();
             Dato b = new Dato();
 
@@ -42,7 +56,7 @@ namespace Clase5_4
 
             a = b;
             a.numero = 10;
-
+            */
 
 
 
